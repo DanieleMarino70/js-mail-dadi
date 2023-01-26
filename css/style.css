@@ -1,0 +1,17 @@
+
+/* GENERAL */
+body{
+    background-color: #6D6875;
+}
+
+
+/* UTILS */
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6rem;
+    width: 6rem;
+    margin: 10px 0;
+}
