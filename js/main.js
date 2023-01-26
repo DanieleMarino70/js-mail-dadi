@@ -27,16 +27,16 @@ const randomUser = Math.floor(Math.random() * 6 + 1);
 const randomCpu = Math.floor(Math.random() * 6 + 1); 
 
 if(randomUser > randomCpu) {
-    console.log("Hai vinto");
-    console.log(randomUser, randomCpu);
+    console.log("Hai vinto!");
+    console.log("User: "+ randomUser, "CPU: " + randomCpu);
 }
 else if (randomUser < randomCpu){
-    console.log("Hai perso");
-    console.log(randomUser, randomCpu);
+    console.log("Hai perso!");
+    console.log("User: "+ randomUser, "CPU: " + randomCpu);
 }
 else{
-    console.log("Hai pareggiato");
-    console.log(randomUser, randomCpu);
+    console.log("Hai pareggiato!");
+    console.log("User: "+ randomUser, "CPU: " + randomCpu);
 }
 
 
