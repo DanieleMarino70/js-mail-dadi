@@ -23,23 +23,34 @@
 //     - IL PRIMO E' MINORE DEL SECONDO
 //     - IL PRIMO E' UGUALE AL SECONDO
 
+const buttonDiceEl = document.getElementById("dice-button");
+const result = document.getElementById("dice-result");
 
-const randomUser = Math.floor(Math.random() * 6 + 1); 
-const randomCpu = Math.floor(Math.random() * 6 + 1); 
+buttonDiceEl.addEventListener(
+    "click", function(){
+        const randomUser = Math.floor(Math.random() * 6 + 1); 
+        const randomCpu = Math.floor(Math.random() * 6 + 1); 
+
+        if(randomUser > randomCpu) {
+            //console.log("Hai vinto!");
+            //console.log("User: "+ randomUser, "CPU: " + randomCpu);
+            result.innerHTML = `Hai Vinto! You: ${randomUser} vs CPU: ${randomCpu}`;
+        }
+        else if (randomUser < randomCpu){
+            //console.log("Hai perso!");
+            //console.log("User: "+ randomUser, "CPU: " + randomCpu);
+            result.innerHTML = `Hai Perso! You: ${randomUser} vs CPU: ${randomCpu}`;
+        }
+        else{
+            //console.log("Hai pareggiato!");
+            //console.log("User: "+ randomUser, "CPU: " + randomCpu);
+            result.innerHTML = `Hai Pareggiato! You: ${randomUser} vs CPU: ${randomCpu}`;
+        }
 
 
-if(randomUser > randomCpu) {
-    console.log("Hai vinto!");
-    console.log("User: "+ randomUser, "CPU: " + randomCpu);
-}
-else if (randomUser < randomCpu){
-    console.log("Hai perso!");
-    console.log("User: "+ randomUser, "CPU: " + randomCpu);
-}
-else{
-    console.log("Hai pareggiato!");
-    console.log("User: "+ randomUser, "CPU: " + randomCpu);
-}
+    }
+);
+
 
 
 

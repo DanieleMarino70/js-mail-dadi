@@ -16,7 +16,8 @@ section{
     box-shadow: 0px 1px 2px 4px #eee;
 }
 
-form{
+form,
+details{
     margin: 10px 30px;
 }
 
